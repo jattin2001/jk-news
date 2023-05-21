@@ -4,7 +4,7 @@ import LoadingBar from "react-top-loading-bar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
   
 export default function App(){

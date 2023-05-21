@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
 import PropTypes from "prop-types";
 import Loader from "./Loader";
@@ -27,10 +26,12 @@ export default function News(props) {
   }
   useEffect(() => {
     updateNews();
-}, [])
+  }, []);
+  
 
 
-  const capitalized = (word) => word.charAt(0).toUpperCase() + word.slice(1);
+  const capitalized = (word) => word && word.charAt(0).toUpperCase() + word.slice(1);
+
 
   const fetchMoreData = async () => {
     const { pageSize, category } = props;
